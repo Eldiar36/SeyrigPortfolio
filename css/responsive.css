@@ -1,0 +1,24 @@
+@media (max-width: 1024px) {
+    header .header .nav-menu{
+        visibility: hidden;
+    }
+    header .header .mobile-btn {
+        visibility: visible;
+    }
+    #home {
+        height: 650px;
+    }
+}
+@media (max-width: 991px) {
+    .hero-container {
+        padding-top: 230px;
+    }
+    .hero-container .box h1 {
+        font-size: 55px;
+        line-height: 66px;
+    }
+    #skills .right-box {
+        margin-top: 40px;
+    }
+
+}
