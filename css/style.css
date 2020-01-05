@@ -72,6 +72,35 @@ header .header {
 .header .nav-items:first-child  a{
     font-weight: 700;
 }
+.header-fixed {
+    padding: 0 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    height: 70px;
+    margin: auto;
+    animation-name: show-header;
+    animation-duration: 1s;
+    background: #ffffff;
+    z-index: 50;
+}
+
+@keyframes show-header {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+.header.header-fixed .logo a,
+.header.header-fixed .nav-items a {
+    color: #000000;
+}
 .nav-menu a:before {
     content: "";
     width: 0;

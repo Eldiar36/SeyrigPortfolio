@@ -36,4 +36,13 @@ $('.mobile-btn').on(  'click',function (e) {
 $('.nav-menu  li').on('click',function () {
     $('.mobile-btn').removeClass('active')
     $('.nav-menu').removeClass('active')
-})
+});
+window.onscroll = function showHeader() {
+    let header =    document.querySelector(".header");
+    if (window.pageYOffset > 200) {
+        header.classList.add("header-fixed")
+    }
+    else  {
+        header.classList.remove("header-fixed")
+    }
+};

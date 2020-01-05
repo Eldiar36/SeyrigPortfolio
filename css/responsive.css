@@ -204,3 +204,66 @@
         top: 9px;
     }
 }
+@media (max-width: 320px) {
+    #home {
+        height: 470px;
+    }
+    .hero-container {
+        padding-top: 140px;
+    }
+    #home .hero-container h1 {
+        font-size: 30px;
+        line-height: 35px;
+        margin:  0 0 20px 0;
+    }
+    .hero-container .box p {
+        font-size: 18px;
+        line-height: 29px;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+    #about,
+    #skills,
+    #portfolio,
+    #contacts {
+        padding: 30px 0 40px 0;
+    }
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #about .box .section-title {
+        margin-bottom: 20px;
+    }
+    #about .box p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    #portfolio .item .box p {
+        margin-bottom: 10px;
+    }
+    #portfolio .item .box p {
+        font-size: 16px;
+    }
+    #portfolio .item .box span {
+        font-size: 14px;
+    }
+    #portfolio .grid {
+        padding-top: 30px;
+    }
+    #portfolio .grid .grid-item img {
+        height: 150px;
+    }
+    #portfolio .owl-nav {
+        display: none;
+    }
+    #contacts ul li {
+        margin-bottom: 10px;
+    }
+    #contacts ul li  a{
+        font-size: 14px;
+    }
+    .mobile-btn {
+        top: 9px;
+    }
+}
