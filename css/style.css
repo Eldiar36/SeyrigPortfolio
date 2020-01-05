@@ -15,7 +15,8 @@ li {
     list-style: none
 }
 
-a, a:hover {
+a, a:hover,
+a:focus{
     color: #FFFFFF;
     text-decoration: none;
 }
@@ -66,25 +67,42 @@ header .header {
     font-size: 18px;
     line-height: 22px;
    color: #ffffff;
+    position: relative;
 }
 .header .nav-items:first-child  a{
     font-weight: 700;
 }
+.nav-menu a:before {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    transition: all 0.4s ease;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+}
+
+.nav-menu li:hover a:before {
+    width: 100%;
+    transform: translateX(1%);
+}
+
 .mobile-btn {
-    position: fixed;
-    width: 20px;
+    position: absolute;
+    width: 25px;
     height: 25px;
     background: none;
-    top: 9%;
+    top: 5%;
     right: 13%;
     z-index: 99999;
     visibility: hidden;
 }
 .mobile-btn .line {
     position: absolute;
-    background: black;
+    background: #ffffff;
     border-radius: 5px;
-    height: 3px;
+    height: 2px;
     right: 0;
     margin: auto;
     width: 20px;
@@ -102,7 +120,7 @@ header .header {
     width: 20px;
     top: 18px;
 }
-.header.active .nav-menu {
+header .header .nav-menu.active {
     width: 100%;
     height: 100%;
     position: fixed;
@@ -111,30 +129,36 @@ header .header {
     background: #111;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     z-index: 999;
     visibility: visible;
 }
-.header.active .nav-menu {
+.nav-menu.active  {
     visibility: visible;
     display: block;
     margin:  0 auto;
 }
-.header.active .logo {
+.nav-menu.active .logo {
     color: #ffffff;
 }
-.header.active .nav-menu li a {
+.nav-menu.active .nav-menu li a {
     color: #ffffff;
 }
-.header.active .line {
-    transform: rotate(180deg);
+.mobile-btn.active .line:first-child {
+    transform: rotate(-315deg);
+    transition: 1s;
+    opacity: 1;
+    top: 8px;
 }
-.header.active .line:last-child {
-    transform: rotate(-180deg);
-}
-.header.active .line:first-child {
+.mobile-btn.active .line:last-child {
     display: none;
+}
+.mobile-btn.active .line:nth-child(2) {
+    transform: rotate(315deg);
+    transition: 1s;
+    opacity: 1;
+    top: 8px;
 }
 #home {
     background: url("../images/Background.png") no-repeat center top;
@@ -175,7 +199,7 @@ header .header {
     font-size: 24px;
     line-height: 29px;
     color: #333333;
-    margin-bottom: 86px;
+   margin: 0 0 86px 0;
 }
 #about {
     padding: 93px 0 115px 0;
@@ -200,7 +224,6 @@ header .header {
     display: flex;
     margin-bottom: 20px;
     width: 100%;
-    height: 24px;
 }
 #skills .right-box .item p {
     font-weight: 600;

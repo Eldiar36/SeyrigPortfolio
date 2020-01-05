@@ -1,3 +1,8 @@
+@media (max-width: 1200px) {
+    #skills .right-box {
+        margin-top: 50px;
+    }
+}
 @media (max-width: 1024px) {
     header .header .nav-menu{
         visibility: hidden;
@@ -5,8 +10,21 @@
     header .header .mobile-btn {
         visibility: visible;
     }
+    header .header .nav-menu .nav-items {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
     #home {
         height: 650px;
+    }
+    #skills .right-box {
+        margin-top: 40px;
+    }
+    #portfolio .grid {
+        padding-top: 50px;
+    }
+    .mobile-btn {
+        top: 10%;
     }
 }
 @media (max-width: 991px) {
@@ -14,11 +32,175 @@
         padding-top: 230px;
     }
     .hero-container .box h1 {
-        font-size: 55px;
+        font-size: 45px;
         line-height: 66px;
+    }
+    #about,
+    #skills,
+    #portfolio,
+    #contacts{
+        padding: 70px 0 90px 0;
+    }
+    .section-title {
+        margin-bottom: 50px;
+    }
+    #about .box .section-title {
+        margin-bottom: 50px;
     }
     #skills .right-box {
         margin-top: 40px;
     }
+    #portfolio .grid {
+        padding-top: 50px;
+    }
 
+}
+@media (max-width: 767px) {
+    header{
+        top: 55px;
+    }
+    #home {
+        height: 550px;
+    }
+    .hero-container {
+        padding-top: 200px;
+    }
+    #home .hero-container h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+    #about,
+    #skills,
+    #portfolio,
+    #contacts {
+        padding: 50px 0 70px 0;
+    }
+    #about .box .section-title {
+        margin-bottom: 35px;
+    }
+    #skills .right-box .item:first-child {
+        margin-bottom: 20px;
+    }
+    #skills .right-box .item {
+       flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    #skills .right-box .item p {
+        width: 100%;
+    }
+    #skills .right-box .item span {
+        font-size: 14px;
+    }
+    #skills .right-box .item span,
+    #skills .right-box .item .progress {
+        margin: 10px 0 5px 0;
+    }
+    #skills .right-box .item .progress {
+        height: 15px;
+    }
+    #skills .progress {
+        width: 100%;
+        font-size: 17px;
+    }
+    .section-title {
+        margin-bottom: 35px;
+    }
+    #portfolio .item .box p {
+        margin-bottom: 29px;
+    }
+    #portfolio .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #portfolio .grid-item.two {
+        grid-row: span 1;
+    }
+    #portfolio .grid .grid-item img {
+        height: 250px;
+    }
+    #portfolio .owl-nav {
+        left: 0;
+        right: 0;
+        bottom: -30px;
+    }
+    .mobile-btn {
+        top: 7%;
+    }
+}
+
+@media (max-width: 600px) {
+    #portfolio .grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #portfolio .grid-item {
+        margin-bottom: 20px;
+    }
+    #portfolio .grid-item img {
+        height: 250px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    #home {
+        height: 470px;
+    }
+    .hero-container {
+        padding-top: 140px;
+    }
+    #home .hero-container h1 {
+        font-size: 30px;
+        line-height: 35px;
+        margin:  0 0 20px 0;
+    }
+    .hero-container .box p {
+        font-size: 18px;
+        line-height: 29px;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+    #about,
+    #skills,
+    #portfolio,
+    #contacts {
+        padding: 30px 0 40px 0;
+    }
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    #about .box .section-title {
+        margin-bottom: 20px;
+    }
+    #about .box p {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    #portfolio .item .box p {
+        margin-bottom: 10px;
+    }
+    #portfolio .item .box p {
+        font-size: 16px;
+    }
+    #portfolio .item .box span {
+        font-size: 14px;
+    }
+    #portfolio .grid {
+        padding-top: 30px;
+    }
+    #portfolio .grid .grid-item img {
+        height: 150px;
+    }
+    #portfolio .owl-nav {
+        display: none;
+    }
+    #contacts ul li {
+        margin-bottom: 10px;
+    }
+    #contacts ul li  a{
+        font-size: 14px;
+    }
+    .mobile-btn {
+        top: 9px;
+    }
 }
